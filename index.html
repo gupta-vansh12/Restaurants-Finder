@@ -1,0 +1,160 @@
+<html>
+  <head>
+    <title>Hungry !</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+
+  <body>
+    <div class="landing">
+      <div class="landing-interact">
+        <div class="navbar">
+          <div class="branding">
+            <div><img class="logo" src="./src/images/logo.png" /></div>
+            <div class="logo-title">HUNGRY !</div>
+          </div>
+          <!--
+                <div class="links">
+                    <div>
+                        <button class="nav-button login">Login</button>
+                    </div>
+                    <div>
+                        <button class="nav-button sign">Sign up</button>
+                    </div>
+                </div>
+                -->
+        </div>
+        <div class="title">
+          <div id="typewriter" class="changing"></div>
+          <div class="sub-title">Find awesome restaurants near you.</div>
+        </div>
+        <div class="search">
+          <select
+    id="selection"
+    onchange="updateSelection(); document.getElementById('search').href='https://www.google.com/maps/search/' + encodeURIComponent(this.value);"
+    class="search-bar"
+    type="text"
+    placeholder="Enter your delivery location"
+>
+
+            <option value="" selected style="display: none"
+              >Select your City</option
+            >
+            <option value="ahemdabad restaurents">Ahmedabad</option>
+            <option value="ambala cantt restaurents">Ambala Cantt</option>
+            <option value="bangalore restaurents">Bangalore</option>
+            <option value="chandigarh restaurents">Chandigarh</option>
+            <option value="delhi restaurents">Delhi</option>
+            <option value="ernakulam restaurents">Ernakulam</option>
+            <option value="faridabad restaurents">Faridabad</option>
+            <option value="goa restaurents">Goa</option>
+            <option value="hyderabad restaurents">Hyderabad</option>
+            <option value="indore restaurents">Indore</option>
+            <option value="jaipur restaurents">Jaipur</option>
+            <option value="kanpur restaurents">Kanpur</option>
+            <option value="lucknow restaurents">Lucknow</option>
+            <option value="mumbai restaurents">Mumbai</option>
+            <option value="nagpur restaurents">Nagpur</option>
+            <option value="pune restaurents">Pune</option>
+            <option value="Shahabad Markanda restaurants">Shahabad Markanda</option>
+            <option value="surat restaurents">Surat</option>
+            <option value="thiruvananthapuram restaurents">Thiruvananthapuram</option>
+            <option value="udaipur restaurents">Udaipur</option>
+            <option value="varanasi restaurents">Varanasi</option>
+            <option value="warangal restaurents">Warangal</option>
+           
+            </select>
+            <a id="search" href="https://www.google.com/maps/search/" target="_blank">
+              <button
+                  disabled
+                  id="search-button"
+                  class="search-bar search-submit"
+                  type="submit"
+              >
+                  Search
+              </button>
+          </a>
+          
+          
+          <script>
+            function updateSelection() {
+              console.log("lol");
+              if (document.getElementById("selection").value == "") {
+                document.getElementById("search-button").disabled = true;
+              } else {
+                document.getElementById("search-button").disabled = false;
+              }
+            }
+          </script>
+        </div>
+        <div class=" cities ">
+          <div class="cities-title">CITIES WE SERVE </div>
+          <div class="cities-sub-title">
+            Ahmedabad, Ambala Cantt, Bangalore, Chennai, Delhi, Hyderabad,Karnal, Kolkata,Kurukshetra, Mumbai, Panipat, Pune ,  Shahabad Markanda and 150 others.
+          </div>
+        </div>
+      </div>
+      <div class="landing-images ">
+        <img class="landing-image " src="./src/images/4.jpg " />
+      </div>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <div><img class="feature-image" src="src/images/order.png" /></div>
+        <div class="feature-title">Variety & Choices</div>
+        <div class="feature-desc">
+          Craving something specific? We've got a restaurant for every desire – because your cravings deserve their perfect match!
+        </div>
+      </div>
+      <div class="feature">
+        <div><img class="feature-image" src="src/images/ice-cream.png" /></div>
+        <div class="feature-title">Close To You</div>
+        <div class="feature-desc">
+          Get to know awesome resturants near you. Find out what they offer and
+          see customer reviews.
+        </div>
+      </div>
+    </div>
+    <div class="mobile">
+      <div class="mob-1">
+        <img class="mobile-image" src="src/images/phone.png" />
+      </div>
+      <div class="mob-2">
+        <div class="changing">Restaurants in your pocket</div>
+        <div class="sub-title">
+          Discover new restaurants near you on the go, with the all-new Hungry
+          app.
+        </div>
+        <div class="stores">
+          <img
+            class="store-image"
+            onClick="alertFunction()"
+            src="src/images/play.webp"
+          /><img class="store-image" src="src/images/iOS.webp" onClick="alertFunction()"/>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="credits">Made by Vansh Gupta | Inspired by FoodCubo</div>
+    </div>
+
+    <script>
+      const alertFunction = () => {
+        window.alert("App is in development... or is it?");
+      };
+    </script>
+    <script src="./src/js/core.js"></script>
+    <script type="text/javascript">
+      const instance = new Typewriter("#typewriter", {
+        strings: [
+          "Get ready to feast, not to search!",
+          "Where hunger meets its match!",
+          "Your hunger. Your rules.",
+          "Eat, drink, and find joy in every bite.",
+          "Searching for flavor? Look no further!"
+        ],
+        autoStart: true,
+        loop: true
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Restaurants | Hungry</title>
+   <link rel="stylesheet" type="text/css" href="../src/css/list.css">
+   <!-- Load Google Maps JavaScript API -->
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCp-mV7mz4mlimnW1nzUIY-23cU_1JmgMo&libraries=places"></script>
+</head>
+<body>
+   <div class="navbar">
+      <div class="branding">
+          <a href="../index.html"><img class="logo" src="../src/images/logo.png"></a>
+          <a href="../index.html"> <div class="logo-title">HUNGRY!</div></a>
+      </div>
+  </div>
+
+    <div id="mid-section">
+        <div class="result-heading">
+            <span>Showing Restaurants in <b></b></span>   
+        </div>
+   </div>
+
+   <!-- Form for searching on Google Maps -->
+   <div class="search-container">
+      <form id="search-form">
+         <input type="text" id="search-input" placeholder="Enter location or keyword">
+         <button type="submit">Search on Google Maps</button>
+      </form>
+   </div>
+
+   <!-- Google Maps container -->
+   <div id="map" style="width: 100%; height: 400px;"></div>
+
+   <!-- Load JavaScript file -->
+   <script type="module" src="../src/js/list-rest.js"></script>
+</body>
+</html>
